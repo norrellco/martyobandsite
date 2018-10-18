@@ -1,0 +1,19 @@
+body {
+  background: url(../images/background/skyviewtress.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+head {
+  font: 'Merriweather Sans', sans-serif;
+}
+
+.topnav {
+  letter-spacing: 6px;
+  line-height: 66px;
+  word-spacing: 50px;
+  text-align: center;
+
+}
