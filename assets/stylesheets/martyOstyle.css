@@ -7,6 +7,12 @@ head {
   line-height: 66px;
   word-spacing: 50px;
   text-align: center;
+  color: black;
+}
+.box {
+  width: cover;
+  height: 150px;
+  background: rgb(110,165,250);
 }
 
 body {
