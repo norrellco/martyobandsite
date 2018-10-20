@@ -9,7 +9,7 @@ head {
   text-align: center;
   color: black;
 }
-.box {
+.boxed {
   width: cover;
   height: 150px;
   background: rgb(110,165,250);
