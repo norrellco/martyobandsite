@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Final Project for HTML5/CSS3 Course">
-  <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
-  <meta name="author" content="Nick Orrell">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marty O'Reilly & the Old Soul Orchestra</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/">
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.css" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
-  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" role="navigation">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <a class="navbar-brand" href="#"><img src="./assets/images/background/headlogo.png" /></a>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MUSIC</a>
-            </li>
-          </ul>
-
-            <ul class="navbar-nav navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">MEDIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MERCH</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TOUR</a>
-            </li>
-          </ul>
-
-      </div>
-  </nav>
-
+  <title>jQuery Lightbox</title>
+  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    section {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    section.group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    section.group a {
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
-  <img src="./assets/images/background/martyoreilly5.jpg" />
+
+<section>
+  <a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox Documentation</a>
+</section>
+
+
+<!-- Single Image -->
+<section>
+  <a href="./assets/images/lightbox/kitten-1.jpg" data-lightbox="kitten" data-title="Cute Kitten">
+    <img src="./assets/images/lightbox/kitten-1-thumbnail.jpg" />
+  </a>
+</section>
+
+
+<!-- Group -->
+<section class="group">
+  <a href="./assets/images/media/martyOart.jpg" data-title="Chinchilla" data-lightbox="cute-animals">
+    <img src="./assets/images/media/martyOart.jpg" />
+  </a>
+  <a href="./assets/images/media/santacruz.jpg" data-title="Piggy" data-lightbox="cute-animals">
+    <img src="./assets/images/media/santacruz.jpg" />
+  </a>
+
+</section>
+
+
+
+
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="./assets/javascripts/lightbox.min.js"></script>
 </body>
-<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
-<script src="./assets/javascripts/lodash.js"></script>
-<script src="./assets/javascripts/mobile-menu.js"></script>
 </html>

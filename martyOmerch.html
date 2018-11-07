@@ -1,25 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head style="font-family: Merriweather sans; color: black;">
-  <link href="./assets/stylesheets/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="./assets/stylesheets/martyOstyle.css" rel="stylesheet" />
-  <link rel="headlogo" sizes="90x90" href="./assets/images/background/headlogo.jpg">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.css" />
   <div class="topnav" style="background: white;">
-    <a class="active" href="#home">HOME</a>
+    <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
     <a href="#music">MUSIC</a>
     <img src="./assets/images/background/banner.png" style="width: 350px; length: 100px;">
     <a href="#media">MEDIA</a>
-    <a href="#merch">MERCH</a>
+    <a class="active" href="#merch">MERCH</a>
     <a href="#tour">TOUR</a>
   </div>
 </head>
-<body>
+<body style="background: black;">
+    <main>
+      <div class="page-banner merch-banner">
+        <h1 class="banner-title">Old Soul Merchandise</h1>
+      </div>
+      <div class="container"  style="color: black;">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="merch-controls">
+              <li data-filter="all">
+                <button class="merch-ctrl-btn active all-icon">All items</button>
+              </li>
+              <li data-filter="Men's">
+                <button class="merch-ctrl-btn mensicon">
+                  <span>Men's</span>
+                  <img src="./assets/images/merch/mensicon.ico" width="50px" height="50px" length="50px"/>
+                </button>
+              </li>
+              <li data-filter="Women's">
+                <button class="merch-ctrl-btn womensicon">
+                  <span>Women's</span>
+                  <img src="./assets/images/merch/womensicon.png" width="100px" height="100px" length="25px"/>
+                </button>
+              </li>
+              <li data-filter="Stuff">
+                <button class="merch-ctrl-btn stufficon">
+                  <span>Stuff</span>
+                  <img src="./assets/images/merch/stufficon.png" width="100px" height="100px" length="25px"/>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="filtr-container row">
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Men's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/captainstxxx.jpg" width="100px" height="100px"
+              alt="Captain's T XXX"
+            />
+            <h4>
+              Captain's T
+            </h4>
+            <h5>
+              $20
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Men's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/green+moth+full+.jpg" width="100px" height="100px"
+              alt="Green Moth T"
+            />
+            <h4>
+              Green Moth T
+            </h4>
+            <h5>
+              $20
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Women's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/purpz.jpg" width="100px" height="100px"
+              alt="Women's Purple T"
+            />
+            <h4>
+              Purple Twin T
+            </h4>
+            <h5>
+              $20
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Stuff" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/bag.jpg" width="100px" height="100px"
+              alt="Hipster Gear Bag"
+            />
+            <h4>
+              Hipster Gear Bag
+            </h4>
+            <h5>
+              $30
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Men's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/blue+stereoscope+full+.jpg" width="100px" height="100px"
+              alt="Men's Stereoscope T"
+            />
+            <h4>
+              Stereoscope T
+            </h4>
+            <h5>
+              $20
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Stuff" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/beanie.jpg" width="100px" height="100px"
+              alt="Keep Your Locks Tight Beanie"
+            />
+            <h4>
+              Prison Beanie
+            </h4>
+            <h5>
+              $15
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Women's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/captains+tank+full.jpg" width="100px" height="100px"
+              alt="Women's Grey Captain's T"
+            />
+            <h4>
+              Grey Lady T
+            </h4>
+            <h5>
+              $20
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Men's" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/long+sleeve.jpg" width="100px" height="100px"
+              alt="U Wish it was a Hoodie"
+            />
+            <h4>
+              U wish 'twas ahoodie
+            </h4>
+            <h5>
+              $40
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Stuff" data-sort="value"style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/wristbands.jpg" width="100px" height="100px"
+              alt="Ya'll need spirituality"
+            />
+            <h4>
+              Ya'll need spirituality beads
+            </h4>
+            <h5>
+              $15
+            </h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="Stuff" data-sort="value" style="color: white;">
+            <img
+              class="image-responsive"
+              src="./assets/images/merch/wm'sbeanie.jpg" width="100px" height="100px"
+              alt="Fuck Trump Beanie"
+            />
+            <h4>
+              Fuck Trump Beanie
+            </h4>
+            <h5>
+              $15
+            </h5>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="./assets/javascripts/jquery.filterizr.min.js"></script>
+  <script src="./assets/javascripts/lodash.js"></script>
+  <script src="./assets/javascripts/mobile-menu.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.filtr-container').filterizr({});
+      $('.merch-ctrl-btn').click(function(){
+        if($(this).hasClass('active')){
+          return false;
+        } else {
+          $('.merch-ctrl-btn').removeClass('active');
+          $(this).addClass('active');
+        }
+      })
+    });
+  </script>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Add font awesome icons -->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
 </body>
-<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
-<script src="./assets/javascripts/lodash.js"></script>
-<script src="./assets/javascripts/mobile-menu.js"></script>
 </html>

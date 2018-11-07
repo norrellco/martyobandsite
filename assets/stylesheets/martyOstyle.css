@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 
-
-head {
+html, head {
   font: 'Merriweather Sans', sans-serif;
 }
 
@@ -14,13 +13,15 @@ head {
   text-align: center;
   color: black;
 }
+
 .boxed {
   width: cover;
   height: 450px;
-  background: rgb(110,165,250);
+  background: black;
+  color: white;
 }
 
-body {
+html, body {
   font-family: Merriweather sans;
   letter-spacing: 0px;
   line-height: 30px;
@@ -30,269 +31,331 @@ body {
   margin-top: 0px;
 }
 
-.navbar-brand
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    margin: auto;
-    padding:0px;
-}
-
-.navbar-toggle {
-    z-index:1;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
+.container {
   position: relative;
-  background-color: #fefefe;
+  content: center;
+  color: white;
+}
+
+.carousel-inner>.item>img {
   margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
 }
 
-/* The Close Button */
-.close {
+h1 {
   color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
   text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
 }
 
-img.demo {
-  opacity: 0.6;
-}
+.tour-dates-banner {
+  background: url('../images/tour-dates/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+  section {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-img.hover-shadow {
-  transition: 0.3s;
-}
+  section.group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
+  section.group a {
+    margin: 10px;
+  }
 
-/********************************/
-/*       Fade Bs-carousel       */
-/********************************/
-.fade-carousel {
+  .parent {
     position: relative;
-    height: 100vh;
-}
-.fade-carousel .carousel-inner .item {
-    height: 100vh;
-}
-.fade-carousel .carousel-indicators > li {
-    margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
-    opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-}
+  }
 
-/********************************/
-/*          Hero Headers        */
-/********************************/
-.hero {
+  .over-img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-    font-size: 6em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
+    top: 80%;
+    left: 20%;
+  }
 
-.fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s;
-        -ms-transition: 2s all ease-in-out .1s;
-         -o-transition: 2s all ease-in-out .1s;
-            transition: 2s all ease-in-out .1s;
-}
-.fade-carousel .carousel-inner .item.active .hero {
-    opacity: 1;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s;
-        -ms-transition: 2s all ease-in-out .1s;
-         -o-transition: 2s all ease-in-out .1s;
-            transition: 2s all ease-in-out .1s;
-}
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-    position: absolute;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .page-banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-banner:after {
+    content: '';
     width: 100%;
     height: 100%;
-    z-index: 2;
-    background-color: #080d15;
-    opacity: .7;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  @media (min-width: 1960px) {
+    .page-banner {
+      height: 600px;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 1959px) {
+    .page-banner {
+      height: 450px;
+    }
+  }
+
+  .page-banner>.banner-title {
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 2px 0px 15px #666;
+    opacity: .5;
+    z-index: 1;
+  }
+
+  @media (min-width: 720px) {
+    .page-banner>.banner-title {
+      font-size: 60px;
+    }
+  }
+
+  /* Media to be editted */
+  */ .media-banner {
+    background: url('../images/media/banner.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .media-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .h3 {
+    color: white;
+  }
+
+  .h5 {
+    color: white;
+  }
+
+  /* .media-card-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    outline: none;
-    margin: 20px auto;
+.media-card{
+  width: 225px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
-.fade-carousel .slides .slide-1,
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-  height: 100vh;
+.media-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.media-card:hover {
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+.media-list > iframe {
+  margin-bottom: 50px;
+} */
+  /*
+
+/* Merch to be editted */
+  */
+
+  .merch-banner {
+  background: url('../images/merch/banner.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
-.fade-carousel .slides .slide-1 {
-  <img src="./assets/images/backround/poster.jpg">
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
-}
-.fade-carousel .slides .slide-3 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+  ul.merch-controls {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #efefef;
+  }
 }
 
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }
+@media (min-width: 500px){
+  ul.merch-controls {
+    flex-wrap: nowrap;
+  }
 }
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }
+ul.merch-controls>li {
+  width: 100%;
+  height: auto;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.merch-ctrl-btn {
+  height: 4rem;
+  flex-grow: 0;
+  width: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn.active {
+  background: #efefef;
+}
+
+.merch-ctrl-btn:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+.merch-ctrl-btn span {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.merch-ctrl-btn img {
+  width: 5%;
+  height: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn:hover span {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.merch-ctrl-btn:hover img {
+  bottom: 15%;
+}
+
+.filtr-item {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item>img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.filtr-item:hover {
+  cursor: pointer;
+  top: .5rem;
+  background: #efefef;
+  z-index: 10;
+}
+
+.filtr-item:hover>img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item.--sold-out:before {
+  content: "Sold Out";
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.5625rem;
+  right: -105px;
+  padding-top: .25rem;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -25px);
+  z-index: 1;
+  background: rgba(117, 0, 2, 0.85);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  transform: rotate(35deg)
+}
+
+.filtr-item.--sold-out:hover {
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: 0;
 }

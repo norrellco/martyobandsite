@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head style="font-family: Merriweather sans; color: black;">
-  <link href="./assets/stylesheets/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="./assets/stylesheets/martyOstyle.css" rel="stylesheet" />
-  <link rel="headlogo" sizes="90x90" href="./assets/images/background/headlogo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="./assets/stylesheets/martyOstyle.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   <div class="topnav" style="background: white;">
     <a class="active" href="#home">HOME</a>
@@ -16,62 +16,66 @@
     <a href="#tour">TOUR</a>
   </div>
 </head>
+
 <body>
-  <div style="opacity: .60;">
-    <img src="./assets/images/background/santacruzfall_home.jpg" style="width: 100%; height: 100%;">
-  </div>
-  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="bs-carousel">
-  <!-- Overlay -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-  </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./assets/images/background/stereoscopealbum.jpg" alt="Stereoscope" width="500px" height="500px">
+        <h3>Check out the new album yo!</h3>
+        <p>
+          Stereoscope Album
+        </p>
+      </div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1">
-          <div class="overlay"></div>
+      <div class="item">
+        <img src="./assets/images/background/poster.jpg" alt="Patty's Day Event" width="350px" height="500px">
+        <h3>See new events and tour dates!</h3>
       </div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are creative</h1>
-            <h3>Get start your next awesome project</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+
+      <div class="item">
+        <img src="./assets/images/merch/captainstxxx.jpg" alt="Merchandise">
+        <h3>Get some Marty O gear...</h3>
       </div>
     </div>
-    <div class="item slides">
-      <div class="slide-2">
-          <div class="overlay"></div>
-      </div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are smart</h1>
-            <h3>Get start your next awesome project</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3">
-          <div class="overlay"></div>
-      </div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are amazing</h1>
-            <h3>Get start your next awesome project</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div>
-    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
   </div>
-</div>
+  </div>
+  <div>
+    <img src="./assets/images/media/santacruz.jpg" width="100%" height="75%"/>
+  </div>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+
 </body>
-<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
-<script src="./assets/javascripts/lodash.js"></script>
-<script src="./assets/javascripts/mobile-menu.js"></script>
+<!--latest jQuery 3-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+
+<!--Bootstrap JS-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 </html>
