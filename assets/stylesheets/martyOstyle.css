@@ -345,7 +345,7 @@ ul.merch-controls>li {
   text-align: center;
   transform: translate(-50%, -25px);
   z-index: 1;
-  background: rgba(117, 0, 2, 0.85);
+  background: black;
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
